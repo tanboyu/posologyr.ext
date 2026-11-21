@@ -1,0 +1,25 @@
+Package: posologyr.ext
+Type: Package
+Title: Event DSL, Tidy Simulation, and MIPD Visualization Extensions for posologyr
+Version: 0.2.0
+Authors@R:
+    person("Boyu", "Tan", role = c("aut", "cre"), email = "tanboyu@shchildren.com.cn")
+Description: Extends posologyr with mrgsolve-like and PKPDsim-like event
+    construction, observation point attachment, multi-threaded tidy simulation,
+    automated IPRED/PRED MAP trajectory extraction, and multi-panel ggplot2
+    MIPD visualization with TDM overlays and target therapeutic windows.
+License: AGPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 4.1.0)
+Imports:
+    posologyr,
+    rxode2,
+    ggplot2,
+    parallel,
+    stats,
+    utils
+Suggests:
+    testthat (>= 3.0.0),
+    patchwork
